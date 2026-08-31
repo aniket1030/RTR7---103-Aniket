@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #define INT_ARRAY_SIZE 10
 #define FLOAT_ARRAY_SIZE 5

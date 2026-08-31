@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 // DEFINING STRUCT
 struct MyData
@@ -12,7 +13,7 @@ struct MyData
 int main(void)
 {
 	// function prototype
-	struct NyData AddStructMembers(struct MyData, struct MyData, struct MyData);
+	struct MyData AddStructMembers(struct MyData, struct MyData, struct MyData);
 
 	// variable declarations
 	struct MyData data1, data2, data3, answer_data;
@@ -30,7 +31,7 @@ int main(void)
 
 	printf("\n\n");
 	printf("Enter 'Double' Value For 'd' Of 'struct MyData data1' : ");
-	scanf("%1f", &data1.d);
+	scanf("%lf", &data1.d);
 
 	printf("\n\n");
 	printf("Enter Character Value For 'c' Of 'struct MyData data1' : ");
@@ -49,7 +50,7 @@ int main(void)
 
 	printf("\n\n");
 	printf("Enter 'Double' Value For 'd' Of 'struct MyData data2' : ");
-	scanf("%1f", &data2.d);
+	scanf("%lf", &data2.d);
 
 	printf("\n\n");
 	printf("Enter Character Value For 'c' Of 'struct MyData data2' : ");
@@ -68,7 +69,7 @@ int main(void)
 
 	printf("\n\n");
 	printf("Enter 'Double' Value For 'd' Of 'struct MyData data3' : ");
-	scanf("%1f", &data3.d);
+	scanf("%lf", &data3.d);
 
 	printf("\n\n");
 	printf("Enter Character Value For 'c' Of 'struct MyData data3' : ");
@@ -82,7 +83,7 @@ int main(void)
 	printf("********** ANSWER *********\n\n");
 	printf("answer_data.i = %d\n", answer_data.i);
 	printf("answer_data.f = %f\n", answer_data.f);
-	printf("answer_data.c = %1f\n\n", answer_data.d);
+	printf("answer_data.c = %f\n\n", answer_data.d);
 
 	answer_data.c = data1.c;
 	printf("answer_data.c (from data1) = %c\n\n", answer_data.c);

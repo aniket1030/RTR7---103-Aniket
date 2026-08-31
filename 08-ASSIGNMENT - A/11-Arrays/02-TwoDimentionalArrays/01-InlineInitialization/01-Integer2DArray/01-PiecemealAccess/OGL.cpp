@@ -10,7 +10,7 @@ int main(void)
 	//code
 	printf("\n\n");
 
-	int_size = size(int);
+	int_size = sizeof(int);
 
 	iArray_size = sizeof(iArray);
 	printf("Size Of Two Dimensional ( 2D ) Integer Array Is = %d\n\n", iArray_size);
@@ -71,3 +71,6 @@ int main(void)
 
 	return(0);
 }
+
+
+

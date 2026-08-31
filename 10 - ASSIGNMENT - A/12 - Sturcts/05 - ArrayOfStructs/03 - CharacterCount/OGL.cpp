@@ -36,7 +36,7 @@ struct CharacterCount
 	                        { 'Z', 0 }, }; // charater_and_count[25].ch_count[25].ch = 'Z'  & character_and_count[25].ch_count = 0
 
 #define SIZE_OF_ENTIRE_ARRAY_OF_STRUCTS sizeof(character_and_count)
-#define SIZE_OF_ONE_STRUCT_FROM_THE_ARRAY_OF_STRUCTS sizeof(charater_and_count[0])
+#define SIZE_OF_ONE_STRUCT_FROM_THE_ARRAY_OF_STRUCTS sizeof(character_and_count[0])
 #define NUM_ELEMENTS_IN_ARRAY (SIZE_OF_ENTIRE_ARRAY_OF_STRUCTS / SIZE_OF_ONE_STRUCT_FROM_THE_ARRAY_OF_STRUCTS)
 
 // ENTRY POINT FUNCTION

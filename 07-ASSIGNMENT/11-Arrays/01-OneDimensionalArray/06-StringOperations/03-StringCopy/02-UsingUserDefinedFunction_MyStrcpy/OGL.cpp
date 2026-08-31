@@ -32,7 +32,7 @@ int main(void)
 	return(0);
 }
 
-void MyStrlen(char str_destination[], char str_source[])
+void MyStrcpy(char str_destination[], char str_source[])
 {
 	//function prototype
 	int MyStrlen(char[]);
@@ -44,7 +44,7 @@ void MyStrlen(char str_destination[], char str_source[])
 	//code
 	iStringLength = MyStrlen(str_source);
 	for (j = 0; j < iStringLength; j++)
-		str_destination[j] = str_source[j] = str_source[j];
+		str_destination[j] = str_source[j];
 
 	str_destination[j] = '\0';
 }
@@ -66,3 +66,5 @@ int MyStrlen(char str[])
 	}
 	return(string_length);
 }
+
+

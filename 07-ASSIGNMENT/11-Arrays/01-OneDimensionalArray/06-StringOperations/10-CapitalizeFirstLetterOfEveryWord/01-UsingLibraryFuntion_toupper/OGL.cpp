@@ -34,13 +34,13 @@ int main(void)
 
 			//SINCE, ALREADY TWO CHARACTER (ST INDICES 'i' AND i + 1 HAVE BEEN CONSIDERED IN THIS else-if BLOCK...WE ARE EXTRA-INCREMENTING 'i' AND 'j' BY 1
 			j++;
-			i++
+			i++;
 		}
 
 		else
 			chArray_CapitalizedFirstLetterOfEveryWord[j] = chArray[i];
 
-		j++
+		j++;
 	}
 
 	chArray_CapitalizedFirstLetterOfEveryWord[j] = '\0';
@@ -74,3 +74,5 @@ int MyStrlen(char str[])
 	}
 	return(string_length);
 }
+
+

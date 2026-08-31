@@ -2,7 +2,7 @@
 
 	struct MyPoint
 	{
-		int x :
+		int x;
 		int y;
 	};
 
@@ -42,7 +42,7 @@ int main(void)
 	if (breadth < 0)
 		breadth = breadth * -1;
 
-	area = lemgth * breadth;
+	area = length * breadth;
 
 	printf("\n\n");
 	printf("Length Of Rectangle = %d\n\n", length);

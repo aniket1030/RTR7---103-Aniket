@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int maiin(int argc, char* argv[], char* envp[])
+int main(int argc, char* argv[], char* envp[])
 {
 	//funtion prototypes OR declarations
 	int MyAddition(int, int);

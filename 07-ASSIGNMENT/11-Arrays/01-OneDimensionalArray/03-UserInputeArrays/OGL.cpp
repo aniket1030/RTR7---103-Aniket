@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 // MACRO CONSTANT USED AS ARRAY SIZE IN SUBSCRIPT AND AS ARRAY LENGTH.
 // HENCE, THIS PROGRAM'S ARRAYS' SIZE CAN BE SIMPLY CHANGED BY CHANGING THESE FOLLOWING 3 GLOBAL MACRO CONSTANT VALUES, BEFORE COMPILING, LINKING AND EXECUTING THE PROGRAM !!!
@@ -26,7 +27,7 @@ int main(void)
 	printf("\n\n");
 	printf("Enter Elements For 'Floating-Point' Array : \n");
 	for (i = 0; i < FLOAT_ARRAY_NUM_ELEMENTS; i++)
-		scanf("%f", &iArray[i]);
+		scanf("%d", &iArray[i]);
 
 	printf("\n\n");
 	printf("Enter Elements For 'Character' Array : \n");

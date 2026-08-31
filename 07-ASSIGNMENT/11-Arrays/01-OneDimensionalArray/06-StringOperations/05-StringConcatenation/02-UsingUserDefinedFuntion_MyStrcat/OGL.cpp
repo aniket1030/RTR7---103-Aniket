@@ -5,7 +5,7 @@
 int main(void)
 {
 	//function prototype
-	void MyStrlen(char[], char[]);
+	void MyStrcat(char[], char[]);
 
 	//variable declarations
 	char chArray_One[MAX_STRING_LENGTH], chArray_Two[MAX_STRING_LENGTH]; // A Character Array Is A String
@@ -32,7 +32,7 @@ int main(void)
 	printf("The Original Second String Entered By You (i.e ; 'chArray_Two[]') Is : \n\n");
 	printf("%s\n", chArray_Two);
 
-	MyStrlen(chArray_One, chArray_Two);
+	MyStrcat(chArray_One, chArray_Two);
 
 	printf("\n\n");
 	printf("****** AFTER CONCATENATION ******");
@@ -88,3 +88,7 @@ int MyStrlen(char str[])
 	}
 	return(string_length);
 }
+
+
+
+

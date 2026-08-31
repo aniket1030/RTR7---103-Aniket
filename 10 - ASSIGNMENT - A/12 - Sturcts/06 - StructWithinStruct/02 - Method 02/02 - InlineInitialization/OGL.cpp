@@ -26,7 +26,7 @@ int main(void)
 		length = length * -1;
 
 	breadth = rect.point_02.x - rect.point_01.x;
-	if (breadth, < 0)
+	if (breadth < 0)
 		breadth = breadth * -1;
 
 	area = length * breadth;

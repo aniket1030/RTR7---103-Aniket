@@ -92,7 +92,7 @@ void Function_OfAMC(void) //function defination
 	printf("Of ASTROMEDICOMP");
 }
 
-void Funtion_Country(void) //function definition
+void Function_Country(void) //function definition
 {
 	printf("\n\n");
 
@@ -100,3 +100,6 @@ void Funtion_Country(void) //function definition
 
 	printf("\n\n");
 }
+
+
+

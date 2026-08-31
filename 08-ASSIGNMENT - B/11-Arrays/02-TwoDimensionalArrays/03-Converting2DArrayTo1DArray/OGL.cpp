@@ -10,14 +10,14 @@ int main(void)
 	int iArray_1D[NUM_ROWS * NUM_COLUMNS];
 
 	int i, j;
-	int num :
+	int num;
 
 	//code
 	printf("Enter Elements Of Your Choice To Fill Up The Integer 2D Array : \n\n");
 	for (i = 0; i < NUM_ROWS; i++)
 	{
 		printf("For ROW NUMBER %d : \n", (i + 1));
-		for (i = 0; i < NUM_ROWS; i++)
+		for (j = 0; j < NUM_ROWS; j++)
 		{
 			printf("Enter Element Number %d : \n", (j + 1));
 			scanf("%d", &num);
@@ -44,7 +44,7 @@ int main(void)
 	{
 		for (j = 0; j < NUM_COLUMNS; j++)
 		{
-			iArray_1D[(i * NUM_COLUMNS) + j] + iArray_2D[i][j];
+			iArray_1D[(i * NUM_COLUMNS) + j] = iArray_2D[i][j];
 		}
 	}
 
@@ -60,3 +60,6 @@ int main(void)
 
 	return(0);
 }
+
+
+

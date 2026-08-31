@@ -7,7 +7,7 @@ int main(void)
 
 	struct MyPoint
 	{
-		int x :
+		int x;
 		int y;
 	};
 

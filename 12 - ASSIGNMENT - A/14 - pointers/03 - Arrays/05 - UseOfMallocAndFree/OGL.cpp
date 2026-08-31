@@ -11,7 +11,7 @@ int main(void)
     //code
     printf("\n\n");
     printf("Enter The Number Of Elements You Want In Your Integer Array : ");
-    scanf("%d", &intArrayLength);
+    scanf("%u", &intArrayLength);
 
     // ****** ALLOCATING AS MUCH MEMORY REQUIRED TO THE INTEGER ARRAY ******
     // ****** MEMORY REQUIRED FOR INTEGER ARRAY = SIZE IN BYTES OF ONE INTEGER * NUMBER OF INTEGERS TO BE STORED IN ARRAY ******
@@ -30,25 +30,25 @@ int main(void)
     {
         printf("\n\n");
         printf("MEMORY ALLOCATION FOR INTEGER ARRAY HAS SUCCEEDED !!!\n\n");
-        printf("MEMORY ADDRESSES FROM %p TO %p HAVE BEEN ALLOCATED TO INTEGER ARRAY !!!\n\n", ptr_iArray, (ptr_iArray + (intArrayLength - 1)));
+        printf("MEMORY ADDRESSES FROM %p TO %p HAVE BEEN ALLOCATED TO INTEGER ARRAY !!!\n\n", (void*)ptr_iArray, (void*)(ptr_iArray + (intArrayLength - 1)));
     }
 
     printf("\n\n");
-    printf("Enter %d Elements For The Integer Array : \n\n", intArrayLength);
+    printf("Enter %u Elements For The Integer Array : \n\n", intArrayLength);
     for (i = 0; i < intArrayLength; i++)
         scanf("%d", (ptr_iArray + i));
 
     printf("\n\n");
-    printf("The Integer Array Entered By You, Consisting Of %d Elements : \n\n", intArrayLength);
+    printf("The Integer Array Entered By You, Consisting Of %u Elements : \n\n", intArrayLength);
     for (i = 0; i < intArrayLength; i++)
     {
-        printf("ptr_iArray[%d] = \t \t At Address &ptr_iArray[%d] : %p\n", i, ptr_iArray[i], i, &ptr_iArray[i]);
+        printf("ptr_iArray[%d] = %d \t \t At Address &ptr_iArray[%d] : %p\n", i, ptr_iArray[i], i, (void*)& ptr_iArray[i]);
     }
 
     printf("\n\n");
     for (i = 0; i < intArrayLength; i++)
     {
-        printf("*(ptr_iArray + %d) = %d \t \t At Address (ptr_iArray + %d) : %p\n", i, *(ptr_iArray + i), i, (ptr_iArray + i));
+        printf("*(ptr_iArray + %d) = %d \t \t At Address (ptr_iArray + %d) : %p\n", i, *(ptr_iArray + i), i, (void*)(ptr_iArray + i));
     }
 
     // ***** CHECKING IF MEMORY IS STILL ALLOCATED BY CHECKING VALIDITY OF BASE ADDRESS 'ptr_iArray' *****
@@ -60,7 +60,7 @@ int main(void)
     if (ptr_iArray)
     {
         free(ptr_iArray);
-        ptr_iArray + NULL;
+        ptr_iArray = NULL;
 
         printf("\n\n");
         printf("MEMORY ALLOCATED FOR INTEGER ARRAY BEEN SUCCESSFULLY FREED !!!\n\n");

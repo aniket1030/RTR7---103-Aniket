@@ -9,7 +9,7 @@ int main(void)
 
 	// code
 	for (i = 0; i < 10; i++)
-		cArray[i] = (char)(i + 65):
+		cArray[i] = (char)(i + 65);
 
 	// *** NAME OF ANY ARRAY IS ITS BASE ADDRESS ***
 	// *** HENCE, 'cArray' IS THE BASE ADDRESS OF ARRAY cArray[] OR 'cArray' IS THE ADDRESS OF ELEMENT cArray[0] ***

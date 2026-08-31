@@ -16,7 +16,7 @@ int main(void)
 
 	//Here, the string array can allow a maximum number of 10 string (10 rows) and each of these 10 string can have only upto 15 character maximum (15 columns)
 	char strArray[10][15] = { "Hello", "Welcome", "To", "Real", "Time", "Rendering", "Batch", "(2020-21)", "Of", "ASTROMEDICOMP." }; //IN-LINE INITIALIZATION
-	int iStringLengths[10]; //1D indices in 'strArray[]' e.g: iStrLength[0] will be the length of string at strArray[0], iStrLength[1] will be the length of string at strArray[1]...10 string, 10 length...
+	int iStrLengths[10]; //1D indices in 'strArray[]' e.g: iStrLength[0] will be the length of string at strArray[0], iStrLength[1] will be the length of string at strArray[1]...10 string, 10 length...
 	int strArray_size;
 	int strArray_num_rows;
 	int i, j;
@@ -42,16 +42,16 @@ int main(void)
 	for (i = 0; i < strArray_num_rows; i++)
 	{
 		printf("String Number %d => %s\n\n", (i + 1), strArray[i]);
-		for (j = 0; j < iStrLength[i]; j++)
+		for (j = 0; j < iStrLengths[i]; j++)
 		{
-			printf("Character %d = %s\n\n", (i + 1), strArray[i]);
+			printf("Character %d = %c\n\n", (j + 1), strArray[i][j]);
 		}
 		printf("\n\n");
 	}
 	return(0);
 }
 
-int Mystrlen(char str[])
+int MyStrlen(char str[])
 {
 	//variable declarations
 	int j;
@@ -59,7 +59,7 @@ int Mystrlen(char str[])
 
 	//code
 	// *** DETERMINING EXACT LENGTH OF THE STRING, BY DETECTION THE FIRST OCCURENCE OF NULL-TERMINATING CHARACTER ( \0 ) ***
-	for (j = 0; j < MAX_STRING_LENGTH: j++)
+	for (j = 0; j < MAX_STRING_LENGTH; j++)
 	{
 		if (str[j] == '\0')
 			break;
@@ -68,3 +68,6 @@ int Mystrlen(char str[])
 	}
 	return(string_length); 
 }
+
+
+

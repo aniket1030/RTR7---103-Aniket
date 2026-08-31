@@ -1,6 +1,7 @@
-
 #include <stdio.h>
 #include <string.h> // for toupper()
+#include <conio.h>
+#include <ctype.h>
 
 int main(void)
 {

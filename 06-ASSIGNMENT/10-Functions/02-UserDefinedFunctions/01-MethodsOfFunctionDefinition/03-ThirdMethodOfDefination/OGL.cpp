@@ -26,7 +26,7 @@ int main(int argc, char* argv[], char* envp[])
 // ****** USER DEFINED FUNCTION : METHOD OF DEFINITION 3 ******
 // ****** NO RETURN VALUE, VALID PARAMETERS (int, int) ******
 
-void MyAdditions(int a, int b) //funtion defination
+void MyAddition(int a, int b) //funtion defination
 {
 	//variable declarations : local variable to MyAdditon()
 	int sum;

@@ -50,10 +50,14 @@ int main(void)
 
 
 	// (RIGHT TO LEFT) Post-increment value *ptr ... That is, value ataddress 'ptr' i.e: *ptr is post-incremented (*ptr)++
-	ptr + &num;
+	ptr = &num;
 	(*ptr)++; // Correct method of post-incrementing a value using pointer ... *ptr is 6 ... at this statement *ptr remains 6 but at next statement *ptr = 7 (post-increment)
 	printf("Answer Of (*ptr)++ : %d\n\n", *ptr); //Brackets are necessary fo post-increment / post-decrement
 
 	return(0);
 
 }
+
+
+
+

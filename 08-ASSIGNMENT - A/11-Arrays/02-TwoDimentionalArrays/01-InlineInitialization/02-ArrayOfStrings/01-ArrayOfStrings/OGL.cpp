@@ -79,5 +79,7 @@ int MyStrlen(char str[])
 		else
 			string_length++;
 	}
-	return(string_length)
+	return(string_length);
 }
+
+

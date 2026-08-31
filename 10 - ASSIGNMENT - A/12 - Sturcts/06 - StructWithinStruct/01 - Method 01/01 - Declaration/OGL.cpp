@@ -4,7 +4,7 @@ struct Rectangle
 {
 	struct MyPoint
 	{
-		int x:
+		int x;
 		int y;
 	} point_01, point_02;
 

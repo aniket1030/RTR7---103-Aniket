@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #define MAX_STRING_LENGTH 512
 
@@ -29,7 +30,7 @@ int main(void)
 	printf("The Original Second String Entered By You (i.e : 'chArray_Two[]') Is : \n\n");
 	printf("%s\n", chArray_Two);
 
-	strlen(chArray_One, chArray_Two);
+	strcat(chArray_One, chArray_Two);
 
 	printf("\n\n");
 	printf("****** AFTER CONCATENATION ******");
@@ -43,3 +44,5 @@ int main(void)
 
 	return(0);
 }
+
+

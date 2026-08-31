@@ -49,7 +49,7 @@ int main(void)
     {
         for (j = 0; j < NUM_COLUMNS; j++)
         {
-            printf("*(*(iArray + %d) + %d) = %d \t \t At Address &(*(*(iArray + %d) + %d)) : %p\n", i, j, *(*(iArray + i) + j), i, j, *(*(iArray + i) + j));
+            printf("*(*(iArray + %d) + %d) = %d \t \t At Address &(*(*(iArray + %d) + %d)) : %p\n", i, j, *(*(iArray + i) + j), i, j, (*(iArray + i) + j));
         }
         printf("\n\n");
     }

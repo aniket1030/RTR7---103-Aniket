@@ -17,11 +17,11 @@ int main(void)
 	//code
 
 	// *** STRING INPUT ***
-	printf("\n\n";
+	printf("\n\n");
 	printf("Enter A String : \n\n");
 	gets_s(chArray, MAX_STRING_LENGTH);
 
-	iStringLength = MySttrlen(chArray);
+	iStringLength = MyStrlen(chArray);
 
 	for (i = 0; i < iStringLength; i++)
 	{
@@ -66,3 +66,5 @@ int MyStrlen(char str[])
 	}
 	return(string_length);
 }
+
+

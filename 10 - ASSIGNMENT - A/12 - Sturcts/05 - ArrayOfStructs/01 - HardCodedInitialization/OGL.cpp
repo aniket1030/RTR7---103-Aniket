@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 #define NAME_LENGTH 100
 #define MARITAL_STATUS 10
@@ -29,39 +30,39 @@ int main(void)
 	// ****** HARD-CODED INITIALIZATION OF ARRAY OF 'struct Employee' ******
 
 	// ****** EMPLOYEE 1 ******
-	strcpyy(EmployeeRecord[0].name, employee_saniya);
+	strcpy(EmployeeRecord[0].name, employee_saniya);
 	EmployeeRecord[0].age = 14;
 	EmployeeRecord[0].sex = 'F';
 	EmployeeRecord[0].salary = 800000.0f;
 	strcpy(EmployeeRecord[0].marital_status, "Unmarried");
 
 	// ****** EMPLOYEE 2 ******
-	strcpyy(EmployeeRecord[0].name, employee_aniket);
-	EmployeeRecord[0].age = 22;
-	EmployeeRecord[0].sex = 'F';
-	EmployeeRecord[0].salary = 700000.0f;
-	strcpy(EmployeeRecord[0].marital_status, "Unmarried");
+	strcpy(EmployeeRecord[0].name, employee_aniket);
+	EmployeeRecord[1].age = 22;
+	EmployeeRecord[1].sex = 'F';
+	EmployeeRecord[1].salary = 700000.0f;
+	strcpy(EmployeeRecord[1].marital_status, "Unmarried");
 
 	// ****** EMPLOYEE 3 ******
-	strcpyy(EmployeeRecord[0].name, employee_janvi);
-	EmployeeRecord[0].age = 14;
-	EmployeeRecord[0].sex = 'F';
-	EmployeeRecord[0].salary = 1000000.0f;
-	strcpy(EmployeeRecord[0].marital_status, "Unmarried");
+	strcpy(EmployeeRecord[0].name, employee_janvi);
+	EmployeeRecord[2].age = 14;
+	EmployeeRecord[2].sex = 'F';
+	EmployeeRecord[3].salary = 1000000.0f;
+	strcpy(EmployeeRecord[2].marital_status, "Unmarried");
 
 	// ****** EMPLOYEE 4 ******
-	strcpyy(EmployeeRecord[0].name, employee_sanjivani);
-	EmployeeRecord[0].age = 14;
-	EmployeeRecord[0].sex = 'F';
-	EmployeeRecord[0].salary = 900000.0f;
-	strcpy(EmployeeRecord[0].marital_status, "Unmarried");
+	strcpy(EmployeeRecord[0].name, employee_sanjivani);
+	EmployeeRecord[3].age = 14;
+	EmployeeRecord[3].sex = 'F';
+	EmployeeRecord[3].salary = 900000.0f;
+	strcpy(EmployeeRecord[3].marital_status, "Unmarried");
 
 	// ****** EMPLOYEE 5 ******
-	strcpyy(EmployeeRecord[0].name, employee_khushi);
-	EmployeeRecord[0].age = 15;
-	EmployeeRecord[0].sex = 'F';
-	EmployeeRecord[0].salary = 600000.0f;
-	strcpy(EmployeeRecord[0].marital_status, "Unmarried");
+	strcpy(EmployeeRecord[0].name, employee_khushi);
+	EmployeeRecord[4].age = 15;
+	EmployeeRecord[4].sex = 'F';
+	EmployeeRecord[4].salary = 600000.0f;
+	strcpy(EmployeeRecord[4].marital_status, "Unmarried");
 
 	// *** DISPLAY ***
 	printf("\n\n");

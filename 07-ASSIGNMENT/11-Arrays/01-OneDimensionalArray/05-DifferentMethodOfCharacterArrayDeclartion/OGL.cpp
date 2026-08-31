@@ -30,8 +30,11 @@ int main(void)
 	printf("chArray_05 : %s\n\n", chArray_05);
 
 	printf("\n\n");
-	printf("Size Of chArray_WithoutNullTerminator : %s\n\n", sizeof(chArray_WithoutNullTerminator));
+	printf("Size Of chArray_WithoutNullTerminator : %lu\n\n", sizeof(chArray_WithoutNullTerminator));
 	printf("chArray_WithoutNullTerminator : %s\n\n", chArray_WithoutNullTerminator); //Will display garbage value at the end of string due to absence of \0
 
 	return(0);
 }
+
+
+

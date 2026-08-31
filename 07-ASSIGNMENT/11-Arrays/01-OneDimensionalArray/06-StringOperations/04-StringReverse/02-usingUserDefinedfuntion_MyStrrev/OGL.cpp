@@ -54,7 +54,7 @@ void MyStrlen(char str_destination[], char str_source[])
 		str_destination[i] = str_source[j];
 	}
 
-	str_destination[i] - '\0';
+	str_destination[i] = '\0';
 }
 
 int MyStrlen(char str[])
@@ -74,3 +74,5 @@ int MyStrlen(char str[])
 	}
 	return(string_length);
 }
+
+

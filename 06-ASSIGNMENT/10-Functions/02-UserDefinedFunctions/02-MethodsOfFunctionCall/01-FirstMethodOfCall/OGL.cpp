@@ -4,7 +4,7 @@
 // ****** CALLING ALL FUNCTIONS IN main() DIRECTLY ******
 
 // Entry-Point Function => main() => Valid Return Type (int) and 3 Parameters (int argc, char *argv[], char *envp[])
-int main(int argc, char argv[], char* envp[])
+int main(void)
 {
 	//function prototypes OR declarations
 	void MyAddition(void);
@@ -97,7 +97,7 @@ int MySubtraction(void) //function defination
 }
 
 // *** Function Definition Of MyMultiplication() ******
-void MyMultiflication(int a, int b) //funtion defination
+void MyMultiplication(int a, int b) //funtion defination
 {
 	//variable declarations : local variables to MmyMultiplication()
 	int multiplication;
@@ -117,9 +117,11 @@ int MyDivision(int a, int b) //funtion defination
 
 	//code
 	if (a > b)
-		division_quotient = a / b;
+		Division_quotient = a / b;
 	else
-		division_quotient = b / a;
+		Division_quotient = b / a;
 
-	return(division_quotient);
+	return(Division_quotient);
 }
+
+

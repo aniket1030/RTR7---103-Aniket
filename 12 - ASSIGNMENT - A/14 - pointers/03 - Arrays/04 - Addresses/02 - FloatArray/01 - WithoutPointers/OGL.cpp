@@ -13,12 +13,12 @@ int main(void)
 	printf("\n\n");
 	printf("Elements Of The 'float' Array : \n\n");
 	for (i = 0; i < 10; i++)
-		printf("fArray[%d] + %d\n", i, fArray[i]);
+		printf("fArray[%d] + %f\n", i, fArray[i]);
 
 	printf("\n\n");
 	printf("Elements Of The 'float' Array : \n\n");
 	for (i = 0; i < 10; i++)
-		printf("fArray[%d] = %d \t \t Address = %p\n", i, fArray[i], &fArray[i]);
+		printf("fArray[%d] = %f \t \t Address = %p\n", i, fArray[i], &fArray[i]);
 
 	printf("\n\n");
 

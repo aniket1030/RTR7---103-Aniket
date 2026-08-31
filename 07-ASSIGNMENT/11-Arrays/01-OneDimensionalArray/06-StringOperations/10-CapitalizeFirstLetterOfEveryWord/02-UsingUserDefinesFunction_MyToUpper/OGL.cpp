@@ -59,7 +59,7 @@ int main(void)
 		else
 			chArray_CapitalizedFirstLetterOfEveryWord[j] = chArray[i];
 
-		j++
+		j++;
 	}
 
 	chArray_CapitalizedFirstLetterOfEveryWord[j] = '\0';
@@ -118,3 +118,6 @@ char MyToUpper(char ch)
 	else
 		return(ch);
 }
+
+
+

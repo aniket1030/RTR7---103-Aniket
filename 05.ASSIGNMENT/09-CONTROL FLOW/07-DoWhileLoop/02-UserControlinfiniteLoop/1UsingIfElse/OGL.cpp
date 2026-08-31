@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 int main(void)
 {
 	//variable declarations
@@ -31,3 +32,4 @@ int main(void)
 	return(0);
 
 }
+

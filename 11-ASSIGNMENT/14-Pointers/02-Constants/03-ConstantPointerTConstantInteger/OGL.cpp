@@ -8,7 +8,7 @@ int main(void)
 
 	//code
 	printf("\n");
-	printf("Current Value Of 'num' = %d\n", num)
+	printf("Current Value Of 'num' = %d\n", num);
 	printf("Current 'ptr' (Address of 'num') = %p\n", ptr);
 
 	// The following line does NOT give error ... as we are modifying the value of the variable individually

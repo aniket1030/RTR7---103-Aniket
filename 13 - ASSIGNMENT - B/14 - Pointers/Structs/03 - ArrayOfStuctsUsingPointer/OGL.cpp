@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <conio.h>
 
 #define NAME_LENGTH 100
 #define MARITAL_STATUS 10

@@ -8,7 +8,7 @@ struct MyNumber
 
 struct NumTables
 {
-	struct NumTables n;
+	struct MyNumber n;
 };
 
 int main(void)

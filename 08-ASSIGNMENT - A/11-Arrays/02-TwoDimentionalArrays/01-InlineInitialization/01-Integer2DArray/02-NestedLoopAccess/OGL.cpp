@@ -29,7 +29,7 @@ int main(void)
 	printf("Elements In The 2D Array : \n\n");
 
 	// *** ARRAY INDICES BEGIN FROM 0, HENCE, 1ST ROW IS ACTUALLY 0TH COLUMN ***
-	for (i = 0; j < iArray_num_rows; i++)
+	for (i = 0; i < iArray_num_rows; i++)
 	{
 		printf("****** ROW %d ******\n", (i + 1));
 		for (j = 0; j < iArray_num_columns; j++)
@@ -41,3 +41,5 @@ int main(void)
 
 	return(0);
 }
+
+

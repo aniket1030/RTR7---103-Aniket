@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 //DEFINING STRUCT
 struct MyPoint
@@ -40,7 +41,7 @@ int main(void)
 				strcpy(point_properties.axis_location, "Negative Y");
 
 			if (point.y > 0) // If 'Y' IS +ve
-				strcpy(Point.properties.axis_location, "Positive Y");
+				strcpy(point_properties.axis_location, "Positive Y");
 
 			point_properties.quadrant = 0; // A Point Lying On Any Of The Co-ordinate Axes Is NOT A Part Of ANY Quadrant...
 			printf("The Point Lies On The %s Axis !!!\n\n", point_properties.axis_location);

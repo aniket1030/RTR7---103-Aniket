@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <conio.h>
 
 #define NUM_EMPLOYEES 5 // Simply Change this constant value to have as many number of Employee Records as you please ...
 
@@ -43,11 +44,11 @@ int main(void)
 		printf("Enter Employee's Sex (M/m For Male, F/f For Female) : ");
 		EmployeeRecord[i].sex = getch();
 		printf("%c", EmployeeRecord[i].sex);
-		EmployeeRecord[i].sex = toupper(Employeerecord[i].sex);
+		EmployeeRecord[i].sex = toupper(EmployeeRecord[i].sex);
 
 		printf("\n\n\n");
 		printf("Enter Employee's Salary (in Indian Rupees) : ");
-		scanf("%f", &Employeerecord[i].salary);
+		scanf("%f", &EmployeeRecord[i].salary);
 
 		printf("\n\n");
 		printf("Is The Employee Married? (Y/y For Yes, N/n For No) : ");

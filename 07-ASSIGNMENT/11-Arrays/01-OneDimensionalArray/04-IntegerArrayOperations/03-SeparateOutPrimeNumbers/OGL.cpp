@@ -21,7 +21,7 @@ int main(void)
 		if (num < 0)
 		    num = -1 * num; 
 
-		iArray[i] = num
+		iArray[i] = num;
 	}
 	
 	// *** PRINTING ENTERE ARRAY ***

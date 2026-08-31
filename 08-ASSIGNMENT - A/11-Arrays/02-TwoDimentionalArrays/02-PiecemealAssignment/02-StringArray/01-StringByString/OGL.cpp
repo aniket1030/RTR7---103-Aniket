@@ -48,7 +48,7 @@ int main(void)
 	printf("\n\n");
 	printf("The String In the 2D Character Array Are : \n\n");
 
-	for (i = 0 : i < strArray_num_rows; i++)
+	for (i = 0; i < strArray_num_rows; i++)
 		printf("%s ", strArray[i]);
 
 	printf("\n\n");
@@ -56,7 +56,7 @@ int main(void)
 	return(0);
 }
 
-void MyStrcpy(char str_destination[])
+void MyStrcpy(char str_destination[], char str_source[])
 {
 	//function prototype
 	int MyStrlen(char[]);

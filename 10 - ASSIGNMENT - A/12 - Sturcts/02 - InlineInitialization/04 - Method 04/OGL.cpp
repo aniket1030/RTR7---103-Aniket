@@ -23,7 +23,7 @@ int main(void)
 	// 6.2 will be assigned to 'f' 'data_two'
 	// 12.199523 will be assigned to 'd' 'datt_two'
 	// 68 will be assigned 'c' of 'data_two' ... but 68 is an integer (int) and 'c' is a 'char' ... so 68 is considered as a decimal ASCII value and its corressponding character ( 'D' ) is assignd to 'c' of data_two
-	struct NyData data_two = { 'P', 6.2f, 12.199523, 68 }; // Inline Initialization
+	struct MyData data_two = { 'P', 6.2f, 12.199523, 68 }; // Inline Initialization
 
 	// 36 will be assigned to '1' of 'data_three,
 	// 'G' is 'char', but 'f' of 'data_three' is 'float'...hence, 'G' is converted to its decimal integer ASCII value (71) and in turn is converted to 'float' (71.000000) and then it will be assigned to 'd' of 'data_three'

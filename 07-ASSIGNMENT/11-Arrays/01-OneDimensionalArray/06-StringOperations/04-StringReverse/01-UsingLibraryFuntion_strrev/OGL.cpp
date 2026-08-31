@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdio.h> // for strrev()
+#include <string.h> // for strrev()
 
 #define MAX_STRING_LENGTH 512
 

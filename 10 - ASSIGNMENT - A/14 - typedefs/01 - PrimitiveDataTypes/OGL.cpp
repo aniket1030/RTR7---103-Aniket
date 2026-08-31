@@ -6,7 +6,7 @@ typedef int MY_INT; // "type" int has been re"def"ined as MY_INT ... Now, "MY_IN
 int main(void)
 {
 	// Function prototype
-	MY_INT Add(MY__INT, MY_INT);
+	MY_INT Add(MY_INT, MY_INT);
 
 	// Typedefs
 	typedef int MY_INT; // "type" int has been re"def"ined as MY_INT ... Now, "MY_INT" can be treated just like "int"
@@ -58,7 +58,7 @@ int main(void)
 	printf("Type MY_DOUBLE variable d = %1f\n", d);
 
 	printf("\n\n");
-	printf("Type CHARACTER variable ch = %c\n" ch);
+	printf("Type CHARACTER variable ch = %c\n", ch);
 
 	printf("\n\n");
 	printf("Type CHARACTER array variable chArray_01 = %s\n", chArray_01);
@@ -91,7 +91,7 @@ MY_INT Add(MY_INT a, MY_INT B)
 {
 	// code
 	MY_INT c;
-	c = a + b;
+	c = a + B;
 	return(c);
 }
 

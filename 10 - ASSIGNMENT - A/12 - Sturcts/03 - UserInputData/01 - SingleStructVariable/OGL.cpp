@@ -25,7 +25,7 @@ int main(void)
 	scanf("%f", &data.f);
 
 	printf("Enter 'Double' Value For Data Member 'd' Of 'struct MyData' : \n");
-	scanf("%1f", &data.d);
+	scanf("%lf", &data.d);
 
 	printf("Enter Character Value For Data Members 'c' of 'struct MyData' : \n");
 	data.ch = getch();

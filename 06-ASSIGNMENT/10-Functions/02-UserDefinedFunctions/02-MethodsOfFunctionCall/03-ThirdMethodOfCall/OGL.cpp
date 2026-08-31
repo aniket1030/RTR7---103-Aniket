@@ -56,20 +56,20 @@ void Function_Surname(void) //function defination
 
 void Function_MiddleName(void) //function definition
 {
-	// funtion declarations
-	void Funtion_FirstName(void);
+	// function declarations
+	void Function_FirstName(void);
 
 	// code
-	Funtion_FirstName();
+	Function_FirstName();
 
 	printf("\n\n");
 
 	printf("Manoj");
 }
 
-void Function_Is(void) //function definition
+void Function_FirstName(void) //function definition
 {
-	// funtion declarations
+	// function declarations
 	void Function_Is(void);
 
 	// code
@@ -80,13 +80,13 @@ void Function_Is(void) //function definition
 	printf("Aniket");
 }
 
-void Funtion_Is(void) //function defination
+void Function_Is(void) //function definition
 {
-	//function declarations
+	// function declarations
 	void Function_Name(void);
 
 	//code
-	void Function_Name();
+	Function_Name();
 
 	printf("\n\n");
 
@@ -107,10 +107,12 @@ void Function_Name(void) //function definition
 }
 
 // ****** User-Defined Functions' Definitions... ***
-void Function_My(void) //funtion definition
+void Function_My(void) //function definition
 {
 	//code
 	printf("\n\n");
 
 	printf("My");
 }
+
+

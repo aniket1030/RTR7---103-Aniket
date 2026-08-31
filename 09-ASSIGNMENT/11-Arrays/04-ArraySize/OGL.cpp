@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int maint(void)
+int main(void)
 {
 	// variable declaration
 	int iArray_One[5];
@@ -26,7 +26,7 @@ int maint(void)
 	num_rows_2D = (sizeof(iArray_Two) / sizeof(iArray_Two[0]));
 
 	printf("Number of elements (columns) in each row in 2-D integer array iArray_Two = %lu\n", (sizeof(iArray_Two[0]) / sizeof(iArray_Two[0][0])));
-	num_columns_2D = (sizeof(iArray_Two[0]) / sizeof(iArray_Two)[0][0]));
+	num_columns_2D = (sizeof(iArray_Two[0]) / sizeof(iArray_Two)[0][0]);
 
 	printf("Number of elements in total in 2-D Array iArray_Two = %d\n", (num_rows_2D * num_columns_2D));
 
@@ -35,14 +35,14 @@ int maint(void)
 	printf("\n\n");
 	printf("Size of 3-D integer array iArray_Three = %lu\n", sizeof(iArray_Three));
 
-	printf("Number rows in 3-D integer array iArray_Three = %lu\n", (sizeof(iArray_Three) / size(iArray_Three[0])));
-	num_rows_3D = (sizeof(iArray_Three) / size(iArray_Three[0]));
+	printf("Number rows in 3-D integer array iArray_Three = %lu\n", (sizeof(iArray_Three) / sizeof(iArray_Three[0])));
+	num_rows_3D = (sizeof(iArray_Three) / sizeof(iArray_Three[0]));
 
 	printf("Number of elements (columns) in one row in 3-D integer array iArray_Three = %lu\n", (sizeof(iArray_Three[0]) / sizeof(iArray_Three[0][0])));
-	num_columns_3D = (sizeof(iArray_Three[0]) / size(iArray_Three[0][0]));
+	num_columns_3D = (sizeof(iArray_Three[0]) / sizeof(iArray_Three[0][0]));
 
 	printf("Number of elements (depth) in one column in one row in 3-D integer array iArray_three = %lu\n", (sizeof(iArray_Three[0][0]) / sizeof(iArray_Three[0][0][0])));
-	depth_3D = (sizeof(iArray_Three[0][0]) / size(iArray_Three[0][0][0]));
+	depth_3D = (sizeof(iArray_Three[0][0]) / sizeof(iArray_Three[0][0][0]));
 
 	printf("Number of elements in total in 3-D Array iArray_Three = %d\n", (num_rows_3D * num_columns_3D * depth_3D));
 
@@ -50,3 +50,6 @@ int maint(void)
 
 	return(0);
 }
+
+
+

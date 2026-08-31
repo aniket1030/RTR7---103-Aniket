@@ -24,16 +24,16 @@ int main(void)
 
 	//code
 	printf("\n\n");
-	printf("Menmbers Of Struct Are : \n\n");
+	printf("Members Of Struct Are : \n\n");
 
 	s.i = 9;
 	s.f = 8.7f;
 	s.d = 1.233422;
 	s.c = 'P';
 
-	printf("s.i = %d\n\n", s, i);
+	printf("s.i = %d\n\n", s.i);
 	printf("s.f = %f\n\n", s.f);
-	printf("s.d = %lf\n\n", s.d);
+	printf("s.d = %1f\n\n", s.d);
 	printf("s.c = %c\n\n", s.c);
 
 
