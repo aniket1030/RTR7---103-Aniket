@@ -1,0 +1,3 @@
+AK : Program Started Successfully 
+AK : WinMain() : Initialize() Successed
+Program Terminated Successfully 
